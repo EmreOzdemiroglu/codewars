@@ -19,3 +19,4 @@ def validate_pin(pin):
 def validate_pin(pin):
     return len(pin in (4,6) and all(p in '0123456789' for p in pin)
 
+validate_pin = lambda pin: len(pin) in (4, 6) and pin.isdigit()
